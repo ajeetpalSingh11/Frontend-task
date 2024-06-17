@@ -1,38 +1,389 @@
-.App {
-  text-align: center;
+.app-container {
+  display: flex;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.contact-list-container {
+  width: Fixed (346px) px;
+  height: Fixed (802px) px;
+  padding: 16px 8px 16px 8px;
   display: flex;
   flex-direction: column;
+  gap: 16px;
+  border: 0px 1px 0px 0px;
+  border-right: 1px solid #efefef;
+  opacity: 0px;
+}
+
+.chats-text {
+  width: 57px;
+  height: 22px;
+  gap: 0px;
+  opacity: 0px;
+  /* font-family: Source Sans Pro; */
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #222222;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px
+}
+
+.contact-card {
+  width: Fill (330px) px;
+  height: Hug (64px) px;
+  display: flex;
+  padding: 8px 0px 0px 0px;
+  cursor: pointer;
+  position: relative;
+  gap: 8px;
+  border-radius: 4px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.profile-details {
+  width: 48px;
+  height: 48px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.profile {
+  width: 48px;
+  height: 48px;
+  top: 8px;
+  left: 8px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.status {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: -36px;
+  left: 36px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.user-details {
+  width: 230px;
+  height: 43px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  opacity: 0px;
+}
+
+.user-name {
+  width: 214.79px;
+  height: 21px;
+  top: 10.5px;
+  left: 64px;
+  gap: 0px;
+  opacity: 0px;
+  /* font-family: SF Pro Text; */
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: -0.33000001311302185px;
+  text-align: left;
+  color: #000000;
+}
+
+.recent-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 230px;
+  height: 20px;
+}
+
+.recent-text {
+  width: 207.1px;
+  height: 17px;
+  top: 34.13px;
+  left: 64px;
+  gap: 0px;
+  opacity: 0px;
+  color: #8E8E93;
+  /* font-family: SF Pro Text; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.71px;
+  letter-spacing: -0.15000000596046448px;
+  text-align: left;
+}
+
+.unread-msg {
+  width: Hug (20px)px;
+  height: Hug (20px)px;
+  gap: 10px;
+  opacity: 0px;
+  position: relative;
+
+}
+
+.eclipse {
+  width: 20px;
+  height: 20px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.unread-count {
+  width: 18px;
+  height: 14px;
+  gap: 0px;
+  opacity: 0px;
+  /* font-family: SF Pro Text; */
+  position: absolute;
+  top: 2.5px;
+  left: 1px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.32px;
+  letter-spacing: -0.15000000596046448px;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+
+.menu-vertical {
+  width: 20px;
+  height: 20px;
+  padding: 3px 0px 3px 0px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.conversation-container {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 8px 14px 8px;
+  margin: 0px 8px;
+  overflow: hidden;
+}
+
+.chat-header {
+  width: 1000px;
+  height: 78px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 0px;
+  opacity: 0px;
+  background: #F6F6F6;
 }
 
-.App-link {
-  color: #61dafb;
+
+.conversation-title {
+  width: 197px;
+  height: 49.47px;
+  display: flex;
+  padding: 15px;
+  gap: 10px;
+  opacity: 0px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user-status {
+  display: flex;
+  position: relative;
+}
+
+.user-title-status {
+  width: 8px;
+  height: 6.82px;
+  position: absolute;
+  top: 9px;
+  left: 40px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.user-text {
+  /* width: 149px; */
+  height: 18.76px;
+  /* font-family: Source Sans Pro; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #222222;
+}
+
+.chat-options {
+  width: Hug (97.5px)px;
+  height: Hug (21px)px;
+  display: flex;
+  gap: 16px;
+  opacity: 0px;
+
+}
+
+.video-icon {
+  width: 24.5px;
+  height: 15.5px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.call-icon {
+  width: 21px;
+  height: 21px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 410px;
+  padding: 20px 5px;
+  gap: 10px;
+  overflow-y: scroll;
+}
+
+.chat-message {
+  width: fit-content;
+  height: auto;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 44px;
+  background: #FAFAFA;
+
+}
+
+.you {
+  background: #DCF7C5;
+}
+
+.user {
+  text-align: left;
+}
+
+.chat-timestamp-you {
+  /* font-family: SF Pro Text; */
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.71px;
+  letter-spacing: -0.30000001192092896px;
+  color: #00000075;
+  text-align: right;
+}
+
+.chat-text {
+  /* font-family: SF Pro Text; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.09px;
+  letter-spacing: -0.30000001192092896px;
+
+}
+
+.chat-timestamp {
+  /* font-family: SF Pro Text; */
+  padding-right: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.71px;
+  letter-spacing: -0.30000001192092896px;
+  color: #00000075;
+  text-align: left;
+
+}
+
+.modal-container {
+  width: Fixed (160px)px;
+  height: Hug (108px)px;
+  position: absolute;
+  z-index: 11;
+  top: 46px;
+  left: 155px;
+  padding: 15px;
+  border-radius: 14px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 6px -2px #1A1A1A33;
+
+}
+
+.modal-item {
+  width: 126px;
+  height: 20px;
+  padding: 5px;
+  border-radius: 4px 0px 0px 0px;
+  /* font-family: Inter; */
+  font-size: 13px;
+  font-weight: 450;
+  line-height: 20px;
+  text-align: left;
+  font-variation-settings: 'slnt' 0;
+
+}
+
+
+.chat-footer {
+  width: Fixed (974px)px;
+  height: Hug (48px)px;
+  display: flex;
+  gap: 6px;
+  opacity: 0px;
+
+}
+
+.footer-icons-div {
+  width: Hug (72px)px;
+  height: Hug (32px)px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.footer-input-div {
+  width: Fill (896px)px;
+  height: Hug (48px)px;
+  padding: 8px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 69px;
+  border: 1px 0px 0px 0px;
+  border: 1px solid #D8D8D8
+}
+
+.footer-input {
+  width: 840px;
+  height: 22px;
+  gap: 0px;
+  opacity: 0px;
+  /* font-family: Source Sans Pro; */
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #888888;
+
 }

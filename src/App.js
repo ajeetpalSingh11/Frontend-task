@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import ContactList from './components/ContactList';
+import Conversation from './components/Conversation';
 
 function App() {
+
+  const [userId, setUserId] = useState("user1");
+  const [deleteChat, setDeleteChat] = useState({});
+
+ const handleContactCardClick =(userId)=>{
+  setUserId(userId);
+ }
+
+ const handleDeleteChat = (userId)=>{
+  const deleteChatCopy = {...deleteChat};
+  deleteChatCopy[userId] = true;
+
+  setDeleteChat(deleteChatCopy);
+ }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app-container'>
+    <ContactList handleContactCardClick={handleContactCardClick} handleDeleteChat={handleDeleteChat} deleteChat={deleteChat}/>
+    <Conversation userId={userId} deleteChat={deleteChat}/>
     </div>
   );
 }
